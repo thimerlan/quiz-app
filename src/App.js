@@ -60,6 +60,9 @@ function App() {
           Questions={Questions}
         />
       )}
+      <footer>
+        <h1>Footer</h1>
+      </footer>
     </div>
   );
 }
