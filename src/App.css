@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #6a5be2; */
+  background: rgb(0, 19, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 19, 36, 1) 0%,
+    rgba(16, 110, 58, 1) 49%,
+    rgba(10, 17, 111, 1) 100%
+  );
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+}
+*::selection {
+  background-color: rgba(16, 110, 58, 1);
+  color: #eee;
+}
+button:active {
+  animation: btn 0.3s ease 1 forwards;
+  background-color: rgb(185, 50, 20) !important;
+}
+@keyframes btn {
+  0% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+.App {
+  width: 500px;
+  border-radius: 30px;
+  padding: 40px;
+  background-color: #fff;
+  position: relative;
+  animation: AnimeR 0.6s ease 1;
+  text-align: center;
+}
+.result {
+  animation: AnimeR 0.6s ease 1;
+}
+.Game {
+  animation: AnimeR 0.6s ease 1;
+}
+.stylee {
+  animation: AnimeR 0.6s ease 1;
+}
+@keyframes AnimeR {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+li:active {
+  background-color: #ff006e;
+  color: #fff;
+}
+button {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  border-radius: 30px;
+  border: 0;
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: darken(#ff006e, 3%) !important;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: 150px;
+}
+.progress {
+  height: 10px;
+  border-radius: 30px;
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 25px;
+}
+.progress__inner {
+  height: 100%;
+  border-radius: 30px;
+  width: 80%;
+  background: rgb(18, 231, 48);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(
+    90deg,
+    rgba(18, 231, 48, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+li:hover {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.progress:before,
+.progress:after {
+  content: "";
+  display: block;
+  height: 50px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress:before {
+  width: 95%;
+  bottom: -10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+}
+
+.progress:after {
+  width: 90%;
+  bottom: -20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
 }
