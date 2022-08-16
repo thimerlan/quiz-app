@@ -3,6 +3,7 @@ import "../App.css";
 function Result({ Questions, correct, beginToGame }) {
   return (
     <div className="result">
+      <h2>The End Quiz Qustions</h2>
       <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" />
       <h2>
         Вы отгадали {correct} ответа из {Questions.length}
