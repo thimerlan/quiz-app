@@ -30,36 +30,9 @@ const Questions = [
 ];
 
 function App() {
-  const [step, setStep] = useState(0);
-  const [correct, setCorrect] = useState(0);
-  const Question = Questions[step];
-
-  const clickToVariant = (index) => {
-    setStep(step + 1);
-    if (index === Question.correct) {
-      setCorrect(correct + 1);
-    }
-  };
-  const beginToGame = () => {
-    setCorrect(0);
-    setStep(0);
-  };
   return (
     <div className="App">
-      {step != Questions.length ? (
-        <Game
-          step={step}
-          clickToVariant={clickToVariant}
-          Questions={Questions}
-          Question={Question}
-        />
-      ) : (
-        <Result
-          beginToGame={beginToGame}
-          correct={correct}
-          Questions={Questions}
-        />
-      )}
+      {step != Questions.length ? <Game /> : <Result />}
     </div>
   );
 }
