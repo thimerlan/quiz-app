@@ -1,0 +1,47 @@
+[33mcommit 0bd79a7e2706bd07524e6d0c442f2aba7fd16eba[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: thimerlan <thimerlan.web@gmail.com>
+Date:   Wed Aug 17 13:16:50 2022 +0300
+
+    updeted all files
+
+[33mcommit 6ca8506e55dfbd11ba01bbfe5085ed2cd7373ee9[m
+Author: thimerlan <thimerlan.web@gmail.com>
+Date:   Wed Aug 17 13:08:18 2022 +0300
+
+    deleted info.txt
+
+[33mcommit 41d446eddae1f40f8ea3a794a78932537fc91487[m
+Author: thimerlan <thimerlan.web@gmail.com>
+Date:   Tue Aug 16 22:20:59 2022 +0300
+
+    removed Footer
+
+[33mcommit f686a1c34b93fc93e97d4ef52b455104aa9cb754[m
+Author: thimerlan <thimerlan.web@gmail.com>
+Date:   Tue Aug 16 21:38:23 2022 +0300
+
+    added info.txt
+
+[33mcommit 64ab0fe225fad7ea0c564dd57d80dbab57ab759e[m[33m ([m[1;32mfooter[m[33m)[m
+Author: thimerlan <thimerlan.web@gmail.com>
+Date:   Tue Aug 16 21:00:21 2022 +0300
+
+    added footer
+
+[33mcommit 541b0cc61d7ed95d1688e5d8b280909621cba21a[m
+Author: thimerlan <thimerlan.web@gmail.com>
+Date:   Tue Aug 16 20:39:08 2022 +0300
+
+    Added the end Quize Title
+
+[33mcommit 9a5829a98ca1105ab7e83a4594dd9df3250dde1e[m
+Author: thimerlan <thimerlan.web@gmail.com>
+Date:   Tue Aug 16 20:24:43 2022 +0300
+
+    Hello My ReactJS
+
+[33mcommit 4f16916dc67382d6df580c5bb8d9645124660a4d[m
+Author: thimerlan <thimerlan.web@gmail.com>
+Date:   Tue Aug 16 15:55:03 2022 +0300
+
+    Initialize project using Create React App

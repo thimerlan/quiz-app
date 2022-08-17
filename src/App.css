@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
-
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -114,10 +114,14 @@ ul {
   padding: 0;
 }
 li {
+  font-weight: 555;
+  color: rgb(41, 33, 33);
+  font-size: 1.5rem;
   padding: 15px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-bottom: 10px;
+  font-family: "Poppins";
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
